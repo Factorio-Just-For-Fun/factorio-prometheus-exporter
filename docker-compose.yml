@@ -8,6 +8,6 @@ services:
     ports:
       - "9100:9100"
     volumes:
-      - ./config.yaml.example:/app/config.yaml.example
+      - "./config.yaml.example:/app/config.yaml.example"
     environment:
       PYTHONUNBUFFERED: "1"
