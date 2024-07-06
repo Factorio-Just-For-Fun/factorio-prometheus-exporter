@@ -7,8 +7,7 @@ ARG REPO_URL
 # Set the working directory in the container
 WORKDIR /app
 
-
-# Install git (if not already installed)
+# Install git and other dependencies
 RUN apt-get update && apt-get install -y git
 
 # Clone the repository
@@ -19,13 +18,6 @@ COPY requirements.txt .
 
 # Install dependencies
 RUN pip install -r requirements.txt
-
-# Copy entrypoint script into container
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh
-
-# Set the entrypoint
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 # Command to run the exporter
 CMD ["python", "factorio_prometheus_exporter.py"]
