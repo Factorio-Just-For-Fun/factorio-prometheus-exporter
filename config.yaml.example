@@ -1,0 +1,10 @@
+# Factorio configuration
+factorio_username: your factorio username
+factorio_token: your factorio token
+external_ip: ""  # Leave empty to fetch dynamically or specify an IP
+
+ports:
+  - your game port 
+# - your game ports	#for multiple server on one ip
+# - your game ports	#for multiple server on one ip
+# - your game ports	#for multiple server on one ip
