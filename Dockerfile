@@ -7,6 +7,9 @@ ARG REPO_URL
 # Set the working directory in the container
 WORKDIR /app
 
+# Ensure /app directory exists and set permissions
+RUN mkdir -p /app && chown -R root:root /app
+
 # Install git (if not already installed)
 RUN apt-get update && apt-get install -y git
 

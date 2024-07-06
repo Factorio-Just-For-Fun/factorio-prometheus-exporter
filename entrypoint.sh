@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Ensure /app directory exists
+mkdir -p /app
+
 # Function to check if config.yaml exists
 check_config() {
   if [ -f "/app/config.yaml" ]; then
