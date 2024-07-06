@@ -1,0 +1,14 @@
+version: '3'
+services:
+  factorio-prometheus-exporter:
+    build:
+      context: .
+      args:
+        REPO_URL: https://github.com/Factorio-Just-For-Fun/factorio-prometheus-exporter.git
+    ports:
+      - "9100:9100"
+    volumes:
+      - ./config.yaml.example:/app/config.yaml.example
+    environment:
+      PYTHONUNBUFFERED: "1"
+    entrypoint: /usr/local/bin/entrypoint.sh
