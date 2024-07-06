@@ -1,6 +1,3 @@
-Certainly! Here's a README.md file specifically tailored for your Docker Compose setup:
-
-```markdown
 # Factorio Prometheus Exporter Docker Compose Setup
 
 ## Description
