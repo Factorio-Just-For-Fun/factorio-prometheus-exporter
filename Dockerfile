@@ -27,4 +27,4 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 # Command to run the exporter
-CMD ["python", "factorio_prometheus_exporter.py", "--config", "config.yaml"]
+CMD ["python", "factorio_prometheus_exporter.py"]
