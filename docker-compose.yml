@@ -6,7 +6,8 @@ services:
       args:
         REPO_URL: https://github.com/Factorio-Just-For-Fun/factorio-prometheus-exporter.git
     ports:
-      - "9100:9100"
+      - "9100:9100"  # Maps port 9100 on host to port 9100 in container
+    network_mode: bridge  # or host, depending on your requirements
     volumes:
       - "./config.yaml:/app/config.yaml"
     environment:
