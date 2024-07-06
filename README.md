@@ -67,7 +67,7 @@ ports:
 
 - Ensure Docker and Docker Compose are properly installed and configured on your system.
 - Adjust the ports in `docker-compose.yml` if necessary to match your desired setup.
-- This setup assumes the Docker containers will expose and run the Prometheus exporter on port `9100` as defined in `docker-compose.yml`.
+- This setup assumes the Docker containers will expose and run the Prometheus exporter on port `8000` as defined in `docker-compose.yml`.
 - Make sure to replace placeholders like `your factorio username` and `your factorio token` with actual credentials in `config.yaml`.
 
 ## Contributing
