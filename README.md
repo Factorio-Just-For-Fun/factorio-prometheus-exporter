@@ -24,7 +24,7 @@ The script dynamically fetches the external IP address or allows configuration i
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your_username/factorio-prometheus-exporter.git
+   git clone https://github.com/Factorio-Just-For-Fun/factorio-prometheus-exporter.git
    cd factorio-prometheus-exporter/
    ```
 
