@@ -11,4 +11,3 @@ services:
       - ./config.yaml.example:/app/config.yaml.example
     environment:
       PYTHONUNBUFFERED: "1"
-    entrypoint: /usr/local/bin/entrypoint.sh

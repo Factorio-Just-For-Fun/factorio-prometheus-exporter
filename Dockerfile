@@ -19,9 +19,11 @@ COPY requirements.txt .
 # Install dependencies
 RUN pip install -r requirements.txt
 
-# Check for config.yaml and rename if necessary
+# Copy entrypoint script into container
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# Set the entrypoint
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 # Command to run the exporter
