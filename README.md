@@ -55,29 +55,20 @@ Modify `config.yaml` to adjust Factorio credentials (`factorio_username` and `fa
 Example `config.yaml`:
 
 ```yaml
-factorio_username: "your_factorio_username"
-factorio_token: "your_factorio_token"
+# Factorio configuration
+factorio_username: your factorio username
+factorio_token: your factorio token
 external_ip: ""  # Leave empty to fetch dynamically or specify an IP
+
 ports:
-  - 34197
-  - 34921
-  - 34679
+  - your game port 
+# - your game ports	#for multiple server on one ip
+# - your game ports	#for multiple server on one ip
+# - your game ports	#for multiple server on one ip
 ```
 
 ## Contributing
 
 Contributions are welcome! Fork the repository and submit a pull request if you want to contribute.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-```
-
-### Key Improvements:
-
-- **Simplification:** The structure is simplified to make it easy to follow and copy-paste.
-- **Formatting:** Code blocks and commands are clearly highlighted for clarity.
-- **Consistency:** Sections are organized logically to guide users through installation, configuration, and usage.
-- **Details:** Clarified instructions for configuration (`config.yaml`) and emphasized contributions and licensing.
-
-Feel free to further customize this template based on additional features, specific requirements of your project, or any other information you want to highlight to potential users or contributors.
