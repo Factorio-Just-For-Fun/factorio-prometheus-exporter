@@ -84,4 +84,4 @@ if __name__ == '__main__':
     # Generate some requests.
     while True:
         check_server_status()
-        time.sleep(20)  # Check every 60 seconds
+        time.sleep(10)  # Check every 10 seconds
