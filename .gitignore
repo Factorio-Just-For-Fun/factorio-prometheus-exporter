@@ -1,2 +1,5 @@
 # Ignore local configuration files
 config.yaml
+.yaml
+Prometheus/
+Grafana
